@@ -39,7 +39,7 @@ FROM {source_image}
 COPY --from=build /build/tmp/ /tmp/
 ENTRYPOINT {entrypoint}
 CMD {cmd}
-ENV FALCONCTL_OPTS={env}
+ENV FALCONCTL_OPTS=--cid={env}
 USER 0:0
 """
 
