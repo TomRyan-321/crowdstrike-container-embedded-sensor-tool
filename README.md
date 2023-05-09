@@ -46,7 +46,7 @@ docker inspect embedtest:latest | jq '.[].Config'
   "StdinOnce": false,
   "Env": [
     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-    "FALCONCTL_OPTS=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456-78"
+    "FALCONCTL_OPTS=--cid=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456-78"
   ],
   "Cmd": [
     "/hello"
